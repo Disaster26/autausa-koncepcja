@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>AutaUsa - import aut z USA i Kanady, Warszawa Wesoła</title>
+<meta name="description" content="Sprowadzamy samochody, motocykle i łodzie z aukcji w USA i Kanadzie: licytacja, transport, odprawa celna, naprawa pod klucz i rejestracja. Darmowy autocheck. Warszawa Wesoła, tel. 504 444 775.">
+<meta name="theme-color" content="#1A2D5A">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-640.webp" imagesrcset="img/hero-m-420.webp 420w, img/hero-m-640.webp 640w, img/hero-m-820.webp 820w" imagesizes="100vw" media="(max-width:899px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="100vw" media="(min-width:900px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/barlow-condensed-latin-700.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/barlow-latin-400.woff2" crossorigin>
+<style>
+@font-face{font-family:BC;src:url(fonts/barlow-condensed-latin-700.woff2) format("woff2");font-weight:700;font-display:swap;unicode-range:U+0000-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026}
+@font-face{font-family:BC;src:url(fonts/barlow-condensed-pl-700.woff2) format("woff2");font-weight:700;font-display:swap;unicode-range:U+0100-024F}
+@font-face{font-family:BC;src:url(fonts/barlow-condensed-latin-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0000-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026}
+@font-face{font-family:BC;src:url(fonts/barlow-condensed-pl-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0100-024F}
+@font-face{font-family:Bw;src:url(fonts/barlow-latin-400.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0000-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026}
+@font-face{font-family:Bw;src:url(fonts/barlow-pl-400.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0100-024F}
+@font-face{font-family:Bw;src:url(fonts/barlow-latin-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0000-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026}
+@font-face{font-family:Bw;src:url(fonts/barlow-pl-600.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0100-024F}
+@font-face{font-family:"BC fb";src:local("Arial Narrow"),local("Arial");size-adjust:90%}
+:root{--n:#1A2D5A;--n2:#12203F;--r:#CE0F0F;--r2:#A80B0B;--t:#111A2E;--s:#4D576B;--g:#EEF1F6;--l:#D4DAE5;--hh:72px;--w:min(92vw,1720px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Bw,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(17px,.3vw + 15.8px,20px);line-height:1.58;color:var(--t);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:BC,"BC fb","Arial Narrow",sans-serif;font-weight:700;line-height:.98;letter-spacing:-.005em}
+h1{font-size:clamp(44px,5.2vw,112px);text-wrap:balance}
+h2{font-size:clamp(38px,3.4vw,72px);text-wrap:balance}
+h3{font-size:clamp(24px,1.5vw,32px);font-weight:600;line-height:1.05}
+p{margin:0}
+.wrap{width:var(--w);margin-inline:auto}
+.sek{padding:clamp(64px,7vw,140px) 0}
+.g{background:var(--g)}
+/* motyw z logo: trzy skosne pasy + gwiazda w rownolegloboku */
+.pasy{display:inline-flex;gap:5px;margin-right:14px;vertical-align:.12em}
+.pasy i{display:block;width:7px;height:.62em;background:var(--r);transform:skewX(-20deg)}
+.pasy i:nth-child(2){background:var(--n)}
+.hd{display:flex;align-items:flex-end;justify-content:space-between;gap:24px 56px;flex-wrap:wrap;margin-bottom:clamp(32px,3vw,56px)}
+.hd p{max-width:60ch;color:var(--s)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:58px;padding:0 34px;background:var(--r);color:#fff;font-family:BC,"BC fb",sans-serif;font-weight:700;font-size:22px;letter-spacing:.01em;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%);transition:background .2s}
+.btn:hover{background:var(--r2)}
+.btn.j{background:#fff;color:var(--n)}
+.btn.j:hover{background:var(--g)}
+.btn svg{width:20px;height:20px;flex:none}
+
+.top{position:sticky;top:0;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.top.sc{border-bottom-color:var(--l);box-shadow:0 6px 24px rgba(18,32,63,.08)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:26px}
+.logo{display:flex;align-items:center;text-decoration:none;flex:none}
+.logo svg{height:clamp(30px,1.9vw,40px);width:auto}
+.menu{display:flex;gap:2px;margin-left:auto}
+.menu a{position:relative;text-decoration:none;font-weight:600;font-size:17px;padding:10px 13px}
+.menu a:after{content:"";position:absolute;left:13px;right:13px;bottom:2px;height:3px;background:var(--r);transform:skewX(-20deg) scaleX(0);transform-origin:left;transition:transform .2s}
+.menu a:hover:after,.menu a.on:after{transform:skewX(-20deg) scaleX(1)}
+.top .tel{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-family:BC,"BC fb",sans-serif;font-weight:700;font-size:21px;color:#fff;background:var(--n);padding:10px 22px;white-space:nowrap;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+.top .tel:hover{background:var(--r)}
+.top .tel svg{width:18px;height:18px}
+.burger{display:none;margin-left:auto;width:48px;height:48px;border:1px solid var(--l);background:#fff;cursor:pointer;padding:0;align-items:center;justify-content:center}
+.burger i{display:block;width:20px;height:2px;background:var(--t);position:relative}
+.burger i:before,.burger i:after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--t);transition:transform .25s}
+.burger i:before{top:-6px}.burger i:after{top:6px}
+.top.open .burger i{background:transparent}
+.top.open .burger i:before{transform:translateY(6px) rotate(45deg)}
+.top.open .burger i:after{transform:translateY(-6px) rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;align-items:flex-end;color:#fff;background:var(--n2);overflow:hidden}
+.hero picture{position:absolute;inset:0}
+.hero picture img{width:100%;height:100%;object-fit:cover;object-position:30% 30%}
+.hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(18,32,63,0) 25%,rgba(18,32,63,.55) 52%,rgba(18,32,63,.94) 82%)}
+.hero .in{position:relative;z-index:2;padding:0 0 clamp(36px,5vw,96px)}
+.hero h1{max-width:21ch}
+.hero .lead{margin-top:20px;max-width:56ch;font-size:clamp(18px,.45vw + 16px,24px);color:rgba(255,255,255,.92)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px 14px;margin-top:28px}
+.hero .info{margin-top:22px;font-size:16px;color:rgba(255,255,255,.78)}
+.hero .gw{position:absolute;z-index:2;right:calc((100vw - var(--w))/2);bottom:clamp(36px,5vw,96px);width:clamp(120px,11vw,220px);opacity:.95}
+@media (min-width:900px){.hero:before{background:linear-gradient(180deg,rgba(18,32,63,0) 35%,rgba(18,32,63,.6) 62%,rgba(18,32,63,.95) 92%),linear-gradient(90deg,rgba(18,32,63,.5),rgba(18,32,63,0) 60%)}}
+@media (max-width:899px){
+  .hero picture img{object-position:40% 20%}
+  .hero:before{background:linear-gradient(180deg,rgba(18,32,63,0) 18%,rgba(18,32,63,.7) 44%,rgba(18,32,63,.96) 66%)}
+  .hero .cta .btn{flex:1 1 230px}
+  .hero .gw{display:none}
+}
+
+/* trasa */
+.trasa{position:relative;display:grid;grid-template-columns:repeat(7,1fr);gap:0 clamp(14px,1.4vw,28px);padding-top:46px}
+.trasa:before{content:"";position:absolute;left:0;right:0;top:16px;height:8px;background:repeating-linear-gradient(110deg,var(--n) 0 18px,transparent 18px 28px)}
+.etap{position:relative}
+.etap:before{content:"";position:absolute;top:-38px;left:0;width:22px;height:22px;background:var(--r);transform:skewX(-20deg);box-shadow:0 0 0 5px var(--g)}
+.etap small{display:block;font-family:BC,"BC fb",sans-serif;font-weight:600;color:var(--r);font-size:18px;margin-bottom:4px}
+.etap h3{color:var(--n);margin-bottom:10px}
+.etap p{color:var(--s);font-size:.93em}
+@media (max-width:1300px){.trasa{grid-template-columns:repeat(4,1fr);gap:40px 24px}.trasa:before{display:none}.etap{padding-top:34px}.etap:before{top:0}}
+@media (max-width:760px){.trasa{grid-template-columns:1fr;gap:0;padding-top:0;padding-left:34px}.trasa:before{display:block;left:6px;right:auto;top:0;bottom:0;width:6px;height:auto;background:repeating-linear-gradient(180deg,var(--n) 0 14px,transparent 14px 22px)}.etap{padding:0 0 30px}.etap:before{top:4px;left:-36px;width:18px;height:18px}}
+
+/* ciemna: wiesz co kupujesz */
+.ciem{background:var(--n);color:#fff;position:relative;overflow:hidden}
+.ciem .in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,120px)}
+.ciem h2{max-width:13ch}
+.ciem .lead{margin-top:20px;color:rgba(255,255,255,.86);max-width:54ch}
+.plusy{margin-top:34px;display:grid;gap:22px}
+.plusy div{padding-left:26px;position:relative}
+.plusy div:before{content:"";position:absolute;left:0;top:.35em;width:10px;height:18px;background:var(--r);transform:skewX(-20deg)}
+.plusy b{display:block;font-family:BC,"BC fb",sans-serif;font-weight:600;font-size:clamp(22px,1.3vw,28px);line-height:1.1;margin-bottom:4px}
+.plusy span{color:rgba(255,255,255,.8)}
+.title{background:#fff;color:var(--t);padding:clamp(24px,2.6vw,48px);clip-path:polygon(0 0,100% 0,100% 100%,28px 100%,0 calc(100% - 28px));align-self:start}
+.title h3{color:var(--n)}
+.title>p{color:var(--s);margin-top:12px}
+.title ul{list-style:none;margin:20px 0 0;padding:0}
+.title li{display:grid;grid-template-columns:minmax(0,15ch) 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--l);font-size:.95em}
+.title li b{font-family:BC,"BC fb",sans-serif;font-weight:600;font-size:20px;color:var(--r);line-height:1.2}
+.ciem .gwbg{position:absolute;right:-6vw;top:-8vw;width:38vw;max-width:640px;opacity:.06;pointer-events:none}
+@media (max-width:1023px){.ciem .in{grid-template-columns:1fr}}
+@media (max-width:480px){.title li{grid-template-columns:1fr;gap:2px}}
+
+/* naprawa */
+.napr{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,5vw,96px);align-items:center}
+.napr img{width:100%;aspect-ratio:2/1;object-fit:cover;clip-path:polygon(0 0,100% 0,100% 100%,40px 100%,0 calc(100% - 40px))}
+.napr .tx>p{color:var(--s);margin-top:18px;max-width:60ch}
+.sprzet{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.sprzet li{padding:10px 0;border-top:1px solid var(--l);font-size:.95em}
+@media (max-width:1023px){.napr{grid-template-columns:1fr}.napr img{order:-1}}
+@media (max-width:560px){.sprzet{grid-template-columns:1fr}}
+
+/* realizacje */
+.pas{display:flex;gap:clamp(12px,1vw,20px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding-bottom:4px}
+.pas::-webkit-scrollbar{display:none}
+.pas.drag{cursor:grabbing;scroll-snap-type:none}
+.pas figure{margin:0;flex:0 0 calc((100% - 3*clamp(12px,1vw,20px))/4);scroll-snap-align:start}
+.pas img{width:100%;aspect-ratio:4/3;object-fit:cover;-webkit-user-drag:none;user-select:none}
+.pas figcaption{font-family:BC,"BC fb",sans-serif;font-weight:600;font-size:22px;color:var(--n);margin-top:12px}
+@media (min-width:1800px){.pas figure{flex-basis:calc((100% - 4*clamp(12px,1vw,20px))/5)}}
+@media (max-width:1023px){.pas figure{flex-basis:calc((100% - 20px)/2.3)}}
+@media (max-width:640px){.pas{margin-inline:calc((100vw - var(--w))/-2);padding:0 calc((100vw - var(--w))/2) 4px;scroll-padding-inline:calc((100vw - var(--w))/2)}.pas figure{flex-basis:78%}}
+.nav{display:flex;gap:8px}
+.nav button{width:54px;height:54px;border:0;background:var(--n);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.nav button:hover{background:var(--r)}
+.nav svg{width:20px;height:20px}
+
+/* aukcje i oplaty */
+.dwa{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,96px)}
+.portale{display:flex;flex-wrap:wrap;gap:10px 10px;margin-top:24px}
+.portale span{font-family:BC,"BC fb",sans-serif;font-weight:600;font-size:clamp(20px,1.2vw,25px);padding:8px 18px;border:2px solid var(--n);color:var(--n);transform:skewX(-12deg)}
+.portale span em{display:inline-block;font-style:normal;transform:skewX(12deg)}
+.dwa .tx>p{color:var(--s);margin-top:16px;max-width:58ch}
+table{width:100%;border-collapse:collapse;margin-top:24px;font-size:.96em}
+th,td{text-align:left;padding:14px 12px 14px 0;border-top:1px solid var(--l);vertical-align:top}
+th{font-weight:600;color:var(--s);font-size:15px}
+td:last-child{font-family:BC,"BC fb",sans-serif;font-weight:700;font-size:22px;color:var(--n);white-space:nowrap}
+.przyp{font-size:14.5px;color:var(--s);margin-top:12px}
+@media (max-width:1023px){.dwa{grid-template-columns:1fr}}
+
+/* faq */
+.faq{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2vw,40px)}
+.faq article{border-top:4px solid var(--n);padding-top:22px}
+.faq h3{color:var(--n);font-size:clamp(22px,1.3vw,27px)}
+.faq p{color:var(--s);margin-top:12px;font-size:.95em}
+@media (max-width:1023px){.faq{grid-template-columns:1fr}}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,4vw,80px)}
+.osoby{display:grid;grid-template-columns:1fr 1fr;gap:22px 32px;margin-top:30px}
+.osoby small{display:block;color:var(--s);font-size:15px}
+.osoby a,.osoby span{font-family:BC,"BC fb",sans-serif;font-weight:700;font-size:clamp(26px,1.7vw,34px);text-decoration:none;color:var(--n);line-height:1.1}
+.osoby a:hover{color:var(--r)}
+.osoby .mail{font-size:clamp(22px,1.3vw,26px)}
+.firma{margin-top:26px;color:var(--s);font-size:15.5px}
+#mapa{margin-top:28px;aspect-ratio:16/9;background:#dfe4ec;position:relative}
+#mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+form{background:#fff;padding:clamp(22px,2.4vw,44px);display:grid;gap:16px;align-content:start;border-top:4px solid var(--r)}
+form h3{color:var(--n)}
+label{display:grid;gap:6px;font-size:15.5px;font-weight:600}
+input,select,textarea{font:inherit;font-weight:400;font-size:16px;padding:14px;border:1px solid var(--l);background:#fff;color:var(--t);width:100%;border-radius:0}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--n);outline-offset:0}
+textarea{min-height:110px;resize:vertical}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .btn{justify-self:start}
+#msg{padding:14px;background:var(--g);color:var(--n);font-weight:600}
+@media (max-width:1023px){.kontakt{grid-template-columns:1fr}}
+@media (max-width:560px){.osoby,.r2{grid-template-columns:1fr}form .btn{justify-self:stretch}}
+
+.stopka{background:var(--n2);color:rgba(255,255,255,.75);padding:56px 0 28px;font-size:15px}
+.stopka .gr{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px 40px}
+.stopka h4{margin:0 0 10px;color:#fff;font-size:15px;font-weight:600}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka p+p{margin-top:4px}
+.stopka .dol{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+.stopka .zr{font-size:12.5px;color:rgba(255,255,255,.5);margin-top:14px}
+@media (max-width:899px){.stopka .gr{grid-template-columns:1fr 1fr}.stopka .gr>div:first-child{grid-column:1/-1}}
+
+/* Wylinka - oficjalny znak */
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+.stopka .dol{line-height:1.5}.stopka .dol .wylinka-badge{font-size:inherit;line-height:inherit}.stopka .dol .wylinka-badge svg{width:1.05em;height:1.05em}
+
+@media (max-width:1240px){
+  .menu{display:none;position:absolute;top:var(--hh);left:0;right:0;background:#fff;flex-direction:column;padding:10px 4vw 22px;border-bottom:1px solid var(--l);box-shadow:0 14px 30px rgba(18,32,63,.12)}
+  .top.open .menu{display:flex}
+  .menu a{padding:14px 4px;font-size:19px;border-bottom:1px solid var(--g)}
+  .menu a:after{display:none}
+  .burger{display:flex}
+}
+@media (max-width:640px){
+  :root{--hh:64px}
+  .top .tel span{display:none}
+  .top .tel{padding:0;width:52px;height:46px;justify-content:center}
+  .top .wrap{gap:10px}
+  .logo svg{height:28px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="znak" viewBox="0 0 200 100"><path d="M30 8h14L22 92H8zM58 8h14L50 92H36zM86 8h106l-22 84H64z" fill="currentColor"/><path d="M128 22l7.6 15.4 17 2.5-12.3 12 2.9 16.9L128 61l-15.2 7.8 2.9-16.9-12.3-12 17-2.5z" style="fill:var(--star,#fff)"/></symbol>
+    <symbol id="tel" viewBox="0 0 24 24"><path d="M6.6 3.5 9 3l1.6 4-2 1.5a12 12 0 0 0 6.9 6.9l1.5-2 4 1.6-.5 2.4a2 2 0 0 1-2 1.6A17 17 0 0 1 5 5.5a2 2 0 0 1 1.6-2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+    <symbol id="str" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="AutaUsa - strona główna">
+      <svg viewBox="0 0 300 50" aria-hidden="true">
+        <g transform="translate(0 3) scale(.88)"><use href="#znak" width="100" height="50" style="color:#1A2D5A"/></g>
+        <text x="96" y="41" font-family="BC,'BC fb',sans-serif" font-weight="700" font-size="48" font-style="italic" fill="#1A2D5A" textLength="104" lengthAdjust="spacingAndGlyphs">AUTA</text>
+        <text x="203" y="41" font-family="BC,'BC fb',sans-serif" font-weight="700" font-size="48" font-style="italic" fill="#CE0F0F" textLength="86" lengthAdjust="spacingAndGlyphs">USA</text>
+      </svg>
+    </a>
+    <nav class="menu" aria-label="Menu główne">
+      <a href="#jak">Jak sprowadzamy</a>
+      <a href="#pewnosc">Autocheck</a>
+      <a href="#naprawa">Naprawa</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#aukcje">Aukcje i opłaty</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false"><i></i></button>
+    <a class="tel" href="tel:+48504444775" aria-label="Zadzwoń: 504 444 775"><svg aria-hidden="true"><use href="#tel"/></svg><span>504 444 775</span></a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <picture>
+    <source media="(min-width:900px)" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" sizes="100vw">
+    <img src="img/hero-m-640.webp" srcset="img/hero-m-420.webp 420w, img/hero-m-640.webp 640w, img/hero-m-820.webp 820w" sizes="100vw" width="820" height="1272" alt="Amerykańskie flagi na dachach samochodów" fetchpriority="high">
+  </picture>
+  <div class="wrap in">
+    <h1>Wybierz auto na aukcji w&nbsp;USA. Resztą zajmiemy się my.</h1>
+    <p class="lead">Licytacja, transport z USA lub Kanady, odprawa celna, naprawa i rejestracja w Polsce. Darmowy autocheck i konsultacja rzeczoznawcy w cenie importu.</p>
+    <div class="cta">
+      <a class="btn" href="#kontakt">Wyceń sprowadzenie <svg aria-hidden="true"><use href="#str"/></svg></a>
+      <a class="btn j" href="tel:+48504444775"><svg aria-hidden="true"><use href="#tel"/></svg>504 444 775</a>
+    </div>
+    <p class="info">Warszawa Wesoła, ul. Armii Krajowej 4 · pon.-sob. 10:00-19:00</p>
+  </div>
+  <svg class="gw" viewBox="0 0 200 100" aria-hidden="true" style="color:#CE0F0F"><use href="#znak"/></svg>
+</section>
+
+<section class="sek g" id="jak">
+  <div class="wrap">
+    <div class="hd">
+      <h2><span class="pasy" aria-hidden="true"><i></i><i></i><i></i></span>Od numeru aukcji do polskich tablic</h2>
+      <p>Kupujemy samochody, motocykle i łodzie na największych aukcjach w USA i Kanadzie, także od firm ubezpieczeniowych i leasingowych. Pojazd wybierasz Ty, my prowadzimy całą resztę.</p>
+    </div>
+    <div class="trasa">
+      <div class="etap"><small>Ty wybierasz</small><h3>Auto na aukcji</h3><p>Szukasz na jednym z portali aukcyjnych i podajesz nam numer aukcji. Pomożemy ocenić ofertę.</p></div>
+      <div class="etap"><small>Przed licytacją</small><h3>Umowa i zadatek</h3><p>Podpisujemy umowę, zadatek wpłacasz najpóźniej dzień przed licytacją.</p></div>
+      <div class="etap"><small>Na żywo</small><h3>Licytacja</h3><p>Licytujemy w stałym kontakcie z Tobą, online i telefonicznie.</p></div>
+      <div class="etap"><small>New York · Chicago · Los Angeles</small><h3>Port w USA</h3><p>Po płatności auto jedzie do najbliższego portu i trafia do kontenera.</p></div>
+      <div class="etap"><small>Gdynia lub Bremerhaven</small><h3>Rejs do Europy</h3><p>Kontener płynie do Gdyni albo Bremerhaven. Odprawę robimy w Polsce lub w Niemczech.</p></div>
+      <div class="etap"><small>W Polsce</small><h3>Odprawa i naprawa</h3><p>Tłumaczenie dokumentów, rzeczoznawca, odprawa celna. Jeśli trzeba - naprawa pod klucz.</p></div>
+      <div class="etap"><small>Koniec trasy</small><h3>Rejestracja</h3><p>Rejestrujemy pojazd i wydajemy go właścicielowi. Szerokiej drogi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sek ciem" id="pewnosc">
+  <svg class="gwbg" viewBox="0 0 200 100" aria-hidden="true" style="color:#fff"><use href="#znak"/></svg>
+  <div class="wrap in">
+    <div>
+      <h2>Wiesz, co kupujesz, zanim zalicytujesz</h2>
+      <p class="lead">Nikt nie lubi przepłacać. Dlatego przy każdym imporcie sprawdzamy historię auta i dajemy do pomocy fachowców, zanim padnie pierwsza oferta.</p>
+      <div class="plusy">
+        <div><b>Darmowy autocheck</b><span>Historia wypadków, przebiegu i napraw oraz liczba właścicieli.</span></div>
+        <div><b>Rzeczoznawca w cenie importu</b><span>Wycena i ocena stanu pojazdu bez dodatkowej opłaty.</span></div>
+        <div><b>Konsultacje przy wyborze</b><span>Podpowiemy, które auto się opłaca, a które lepiej odpuścić.</span></div>
+      </div>
+    </div>
+    <div class="title">
+      <h3>Jak czytać TITLE?</h3>
+      <p>Bez właściwego TITLE (dokumentu własności) auta nie zarejestrujesz w Polsce. Omijaj pojazdy z takimi wpisami:</p>
+      <ul>
+        <li><b>Certificate of destruction</b><span>auto całkowicie zniszczone</span></li>
+        <li><b>Parts only</b><span>auto tylko na części</span></li>
+        <li><b>Bill of sale</b><span>brak TITLE, tylko faktura sprzedaży</span></li>
+        <li><b>Non-repairable</b><span>nie nadaje się do naprawy ani odbudowy</span></li>
+        <li><b>No title, Paperless title</b><span>pojazd nie ma TITLE</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="naprawa">
+  <div class="wrap napr">
+    <div class="tx">
+      <h2><span class="pasy" aria-hidden="true"><i></i><i></i><i></i></span>Naprawa pod klucz</h2>
+      <p>Auta z aukcji często wymagają naprawy. Zaczynamy od oględzin razem z Tobą, potem ustalamy sposób naprawy, kosztorys i listę części. Naprawy blacharsko-lakiernicze robimy zgodnie z technologią danej marki, na oryginalnych częściach, a na koniec sprawdzamy geometrię.</p>
+      <ul class="sprzet">
+        <li>rama do pomiaru geometrii nadwozia</li>
+        <li>spawarki i zgrzewarki do blach</li>
+        <li>serwis olejowy</li>
+        <li>serwis klimatyzacji</li>
+        <li>pełna diagnostyka komputerowa</li>
+        <li>czyszczenie auta i detailing na życzenie</li>
+      </ul>
+    </div>
+    <img src="img/doradztwo-720.webp" srcset="img/doradztwo-400.webp 400w, img/doradztwo-720.webp 720w, img/doradztwo-1000.webp 1000w" sizes="(max-width:1023px) 92vw, 45vw" width="1000" height="500" loading="lazy" alt="Doradca omawia z klientem naprawę samochodu">
+  </div>
+</section>
+
+<section class="sek g" id="realizacje">
+  <div class="wrap">
+    <div class="hd">
+      <h2><span class="pasy" aria-hidden="true"><i></i><i></i><i></i></span>Auta, które już jeżdżą po Polsce</h2>
+      <div class="nav" data-nav="pas"><button type="button" data-k="-1" aria-label="Poprzednie auta"><svg style="transform:scaleX(-1)"><use href="#str"/></svg></button><button type="button" data-k="1" aria-label="Następne auta"><svg><use href="#str"/></svg></button></div>
+    </div>
+    <div class="pas" id="pas" data-tor>
+      <figure><img src="img/audi-a5-400.webp" srcset="img/audi-a5-400.webp 400w, img/audi-a5-720.webp 720w" sizes="(max-width:640px) 78vw, (max-width:1023px) 42vw, (max-width:1799px) 23vw, 18vw" width="720" height="540" loading="lazy" alt="Audi A5 sprowadzone z USA"><figcaption>Audi A5</figcaption></figure>
+      <figure><img src="img/bentleybialy-400.webp" srcset="img/bentleybialy-400.webp 400w, img/bentleybialy-720.webp 720w" sizes="(max-width:640px) 78vw, (max-width:1023px) 42vw, (max-width:1799px) 23vw, 18vw" width="720" height="540" loading="lazy" alt="Biały Bentley sprowadzony z USA"><figcaption>Bentley</figcaption></figure>
+      <figure><img src="img/bmw-a-400.webp" srcset="img/bmw-a-400.webp 400w, img/bmw-a-720.webp 720w" sizes="(max-width:640px) 78vw, (max-width:1023px) 42vw, (max-width:1799px) 23vw, 18vw" width="720" height="540" loading="lazy" alt="Niebieskie BMW 335i coupe"><figcaption>BMW 335i</figcaption></figure>
+      <figure><img src="img/ford-edge-400.webp" srcset="img/ford-edge-400.webp 400w, img/ford-edge-720.webp 720w" sizes="(max-width:640px) 78vw, (max-width:1023px) 42vw, (max-width:1799px) 23vw, 18vw" width="720" height="540" loading="lazy" alt="Ford Edge sprowadzony z USA"><figcaption>Ford Edge</figcaption></figure>
+      <figure><img src="img/mazda-cx9-400.webp" srcset="img/mazda-cx9-400.webp 400w, img/mazda-cx9-720.webp 720w" sizes="(max-width:640px) 78vw, (max-width:1023px) 42vw, (max-width:1799px) 23vw, 18vw" width="720" height="540" loading="lazy" alt="Mazda CX-9"><figcaption>Mazda CX-9</figcaption></figure>
+      <figure><img src="img/mercedes-glk-350-400.webp" srcset="img/mercedes-glk-350-400.webp 400w, img/mercedes-glk-350-720.webp 720w" sizes="(max-width:640px) 78vw, (max-width:1023px) 42vw, (max-width:1799px) 23vw, 18vw" width="720" height="540" loading="lazy" alt="Mercedes GLK 350"><figcaption>Mercedes GLK 350</figcaption></figure>
+      <figure><img src="img/toyota-highlander-400.webp" srcset="img/toyota-highlander-400.webp 400w, img/toyota-highlander-720.webp 720w" sizes="(max-width:640px) 78vw, (max-width:1023px) 42vw, (max-width:1799px) 23vw, 18vw" width="720" height="540" loading="lazy" alt="Toyota Highlander"><figcaption>Toyota Highlander</figcaption></figure>
+      <figure><img src="img/bmw-b-400.webp" srcset="img/bmw-b-400.webp 400w, img/bmw-b-720.webp 720w" sizes="(max-width:640px) 78vw, (max-width:1023px) 42vw, (max-width:1799px) 23vw, 18vw" width="720" height="540" loading="lazy" alt="Czarne BMW 335i"><figcaption>BMW 335i</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="aukcje">
+  <div class="wrap dwa">
+    <div class="tx">
+      <h2><span class="pasy" aria-hidden="true"><i></i><i></i><i></i></span>Gdzie szukać aut</h2>
+      <p>Te serwisy polecamy do wyszukiwania. Znalazłeś model, który Ci się podoba? Wyślij nam link albo numer aukcji.</p>
+      <div class="portale">
+        <span><em>Copart</em></span><span><em>IAA</em></span><span><em>Manheim</em></span><span><em>Impact Canada</em></span><span><em>Total Resource</em></span><span><em>Salvage Now</em></span><span><em>Autotrader</em></span><span><em>Cars.com</em></span><span><em>eBay Motors</em></span>
+      </div>
+    </div>
+    <div class="tx">
+      <h2><span class="pasy" aria-hidden="true"><i></i><i></i><i></i></span>Opłaty aukcyjne</h2>
+      <table>
+        <tr><th>Wartość auta</th><th>Opłata aukcyjna</th></tr>
+        <tr><td style="font-family:inherit;font-weight:400;font-size:inherit;color:inherit">do $2 500</td><td>do $500</td></tr>
+        <tr><td style="font-family:inherit;font-weight:400;font-size:inherit;color:inherit">$2 501 - $19 999</td><td>do $800</td></tr>
+        <tr><td style="font-family:inherit;font-weight:400;font-size:inherit;color:inherit">$20 000 - $50 000</td><td>do $1 100</td></tr>
+        <tr><td style="font-family:inherit;font-weight:400;font-size:inherit;color:inherit">Wysyłka dokumentów (DHL lub UPS)</td><td>$50</td></tr>
+      </table>
+      <p class="przyp">Dokładna opłata zależy od licytacji. Stawki z obecnej strony autausa.waw.pl.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sek g" id="pytania">
+  <div class="wrap">
+    <div class="hd"><h2><span class="pasy" aria-hidden="true"><i></i><i></i><i></i></span>Częste pytania</h2></div>
+    <div class="faq">
+      <article><h3>Dlaczego zakończona licytacja wraca z nowym terminem?</h3><p>Nie została osiągnięta cena minimalna. Sprzedający ma wtedy 72 godziny na decyzję: jeśli się zgodzi, licytujący dostaje pojazd, jeśli nie - może wycofać auto albo wystawić je ponownie.</p></article>
+      <article><h3>Czemu VIN na aukcji ma 11 znaków, a nie 17?</h3><p>Przy autach uszkodzonych niektóre domy aukcyjne ujawniają pełny VIN dopiero po wygranej licytacji. Auta nowe i używane mają pełny VIN od początku.</p></article>
+      <article><h3>Czy każde auto z USA zarejestruję w Polsce?</h3><p>Nie każde - decyduje TITLE, czyli dokument własności. Zanim zalicytujesz, sprawdzimy go razem z Tobą.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="kontakt">
+  <div class="wrap kontakt">
+    <div>
+      <h2><span class="pasy" aria-hidden="true"><i></i><i></i><i></i></span>Zadzwoń albo napisz</h2>
+      <div class="osoby">
+        <div><small>Maciej</small><a href="tel:+48504444775">504 444 775</a></div>
+        <div><small>Jacek</small><a href="tel:+48504444776">504 444 776</a></div>
+        <div><small>E-mail</small><a class="mail" href="mailto:biuro@autausa.waw.pl">biuro@autausa.waw.pl</a></div>
+        <div><small>Poniedziałek - sobota</small><span>10:00-19:00</span></div>
+      </div>
+      <p class="firma">Mecca sp. z o.o., ul. Armii Krajowej 4, 05-075 Warszawa Wesoła · KRS 0000755052 · NIP 5252768482</p>
+      <div id="mapa" data-src="https://maps.google.com/maps?q=Armii%20Krajowej%204%2C%2005-075%20Warszawa&amp;z=15&amp;output=embed" data-title="Mapa: ul. Armii Krajowej 4, Warszawa Wesoła"></div>
+    </div>
+    <form id="form" novalidate>
+      <h3>Wycena sprowadzenia</h3>
+      <div class="r2">
+        <label>Imię<input name="n" autocomplete="given-name"></label>
+        <label>Telefon<input name="t" type="tel" autocomplete="tel"></label>
+      </div>
+      <label>Link lub numer aukcji<input name="a" placeholder="np. Copart, numer lotu"></label>
+      <label>Co chcesz sprowadzić
+        <select name="r"><option>Samochód osobowy</option><option>SUV lub pickup</option><option>Motocykl</option><option>Łódź</option><option>Jeszcze szukam auta</option></select>
+      </label>
+      <label>Wiadomość<textarea name="w" placeholder="Model, rocznik, budżet albo pytanie"></textarea></label>
+      <button class="btn" type="submit">Wyślij zapytanie <svg aria-hidden="true"><use href="#str"/></svg></button>
+      <p id="msg" hidden>To podgląd strony - formularz zacznie wysyłać wiadomości po wdrożeniu.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap">
+    <div class="gr">
+      <div><a class="logo" href="#" aria-label="AutaUsa"><svg viewBox="0 0 300 50" style="height:38px;width:auto" aria-hidden="true"><g transform="translate(0 3) scale(.88)"><use href="#znak" width="100" height="50" style="color:#fff;--star:#12203F"/></g><text x="96" y="41" font-family="BC,'BC fb',sans-serif" font-weight="700" font-size="48" font-style="italic" fill="#fff" textLength="104" lengthAdjust="spacingAndGlyphs">AUTA</text><text x="203" y="41" font-family="BC,'BC fb',sans-serif" font-weight="700" font-size="48" font-style="italic" fill="#E33B3B" textLength="86" lengthAdjust="spacingAndGlyphs">USA</text></svg></a><p style="margin-top:14px">Import aut z USA i Kanady</p></div>
+      <div><h4>Adres</h4><p>ul. Armii Krajowej 4</p><p>05-075 Warszawa Wesoła</p><p>pon.-sob. 10:00-19:00</p></div>
+      <div><h4>Kontakt</h4><p><a href="tel:+48504444775">504 444 775</a> Maciej</p><p><a href="tel:+48504444776">504 444 776</a> Jacek</p><p><a href="mailto:biuro@autausa.waw.pl">biuro@autausa.waw.pl</a></p></div>
+      <div><h4>Firma</h4><p>Mecca sp. z o.o.</p><p>KRS 0000755052</p><p>NIP 5252768482</p></div>
+    </div>
+    <div class="dol">
+      <span>&copy; <span id="rok">2026</span> AutaUsa · Mecca sp. z o.o.</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=autausa.waw.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+    <p class="zr">Podgląd koncepcji na zdjęciach i tekstach z obecnej strony autausa.waw.pl.</p>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
